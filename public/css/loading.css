@@ -1,0 +1,141 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.pageContainer{
+  display: grid;
+  grid-template-columns: 1fr 300px 300px 1fr;
+  height: 100vh;
+  justify-content: center;
+}
+
+  .left{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: #34495E;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: 7s;
+  }
+
+  .middle{
+    grid-column: 2 / 4;
+    grid-row: 1;
+    z-index: 2;
+    margin-top: 5%;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-delay: 7s;
+  }
+
+    .titleLogo{
+      background-image: url('http://res.cloudinary.com/cesar-sanchez/image/upload/v1495661127/TechBytes_text_hoev8y.svg');
+      background-position: center;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      height: 85px;
+      margin-bottom: 6%;
+      animation-name: slideUp;
+      animation-duration: 1s;
+      animation-delay: 3s;
+    }
+
+    .logo{
+      background-image: url('http://res.cloudinary.com/cesar-sanchez/image/upload/v1491487268/Fox_Vector4_bocjva.png');
+      background-position: center;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      height: 300px;
+      margin-bottom: 6%;
+    }
+
+    .spinWheel{
+      position: relative;
+      background-image: url('http://res.cloudinary.com/cesar-sanchez/image/upload/v1495661114/New_spinwheel_cj1vra.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 144px;
+      margin-bottom: 6%;
+      animation-name: rotate;
+      animation-duration: 2500ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+    }
+
+    p{
+      color: white;
+      text-align: center;
+      font-size: 20px;
+    }
+
+  .right{
+    grid-column: 3 / 5;
+    grid-row: 1;
+    background-color: #3498DB;
+    animation-name: slideRight;
+    animation-duration: 1s;
+    animation-delay: 7s;
+  }
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+    left: 0;
+  }
+
+  25%{
+    left: 125px;
+    transform: rotate(180deg);
+  }
+
+  50%{
+    left: 0;
+    transform: rotate(0deg);
+  }
+
+  75%{
+    left: -125px;
+    transform: rotate(-180deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+    left: 0;
+  }
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideDown {
+  0%{
+    transform: translateY(0);
+    opacity: 1
+  }
+
+  100%{
+    transform: translateY(100%);
+    opacity: 0
+  }
+}

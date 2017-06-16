@@ -1,0 +1,34 @@
+{
+  "name": "techbytes",
+  "version": "0.1.0",
+  "description": "Personal Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c3as3"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal",
+    "techbytes"
+  ],
+  "author": "c3as3",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-recaptcha": "^2.1.0",
+    "express-validator": "^3.2.0",
+    "jade": "*",
+    "mongodb": "^2.2.26",
+    "mongoose": "~4.9.0",
+    "pace-js": "^1.0.2",
+    "serve-favicon": "~2.3.2"
+  }
+}

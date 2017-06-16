@@ -1,0 +1,124 @@
+mixin nav-content()
+  ul
+    li Welcome
+    li About
+    li Skills
+    li Portfolio
+    li Contact
+
+doctype html
+
+head
+  meta(charset="utf-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  title TechBytes | Home
+  link(rel="stylesheet", href="main.css")
+  
+body
+
+  .loading-overlay
+    .pageContainer
+      .left
+      .middle
+        .titleLogo
+        .logo
+        .spinWheel
+        p Please wait while we load the page
+      .right
+  
+  header
+    a(href="home.html").nav-logo
+    .hamburger
+      span
+      span
+      span
+    .desktop-nav
+      +nav-content   
+    
+  nav
+    .mobile-nav
+      +nav-content
+     
+  .page-wrap-container  
+    section.welcome
+      h1 TechBytes
+      p Welcome to TechBytes
+      p This site is created to showcase my skills and abilities in order to provide a glimpse into my work.
+      p Happy Surfin'!
+      
+    section.about
+      h2 About
+      .photo-container
+        .about-photo
+      .text-container
+        p This is the section where I talk a little about myself, something I hate doing.
+        p I am a computer engineer who works for Memorial Sloan Kettering Cancer Center in New York City. However, I dedicate my free time to working on the back-end, some call it "Behind the Scenes" or "Back Stage." I made that up, lolz. I am, at times, frustrated with the tedious effort of learning to code and the countless hours spent on troubleshooting when I was just missing a comma somewhere. Nevertheless, the satisfaction of witnessing your code at work is what keeps me going. 
+        p I also enjoy hiking, biking(single speed guru) and the occasional video game(currently playing Star Citizen Alpha).
+      
+      .icon-container
+        .icon.iconRed
+          .icon1
+        .icon.iconOrange
+          .icon2
+        .icon.iconPurple
+          .icon3
+        .icon.iconBlue
+          .icon4
+        .icon.iconGreen
+          .icon5 
+  
+    section.skills
+      h2 Skills
+      .programming-container
+        h4 Programming
+        ul
+          li Item 1
+          li Item 2
+          li Item 3
+      .desktop-support-container
+        h4 Desktop Support
+        ul
+          li Item 1
+          li Item 2
+          li Item 3
+      
+    section.portfolio
+      h2 Portfolio
+      .portfolio-container
+        a(href="/calendar").mod.mod1
+        .mod.mod2
+        .mod.mod3
+        .mod.mod4
+        .mod.mod5
+        .mod.mod6
+        
+    section.contact
+      h2 Contact
+      <form  method="POST">
+      if errors
+        ul
+          for error in errors
+            li!= error.msg
+      <p class="first"><input type="text" name="name" placeholder="Name"><br/>
+      <p class="email"><input type="text" name="email" placeholder="Email"><br/>
+      <p class="message"><textarea rows="6" type="text" name="message" placeholder="Message"></textarea><br/>
+      <button input="submit" value="submit" disabled>Submit</button>
+      <div class="g-recaptcha" data-sitekey="6LckTSEUAAAAAFnv4Jm1zhHDbUVwjGn11s4QrB0q" data-callback="recaptcha_callback"></div>
+      script.
+        function recaptcha_callback() {
+        $('button').removeAttr('disabled');
+        };
+      </form>
+        
+      .icon-container
+        .github
+        .linkedIn
+        .twitter
+        p.githubText Github
+        p.linkedInText LinkedIn
+        p.twitterText Twitter
+      
+  
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+  script(src="/scripts.js")
+  script(src='https://www.google.com/recaptcha/api.js')

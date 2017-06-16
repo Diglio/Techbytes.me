@@ -1,0 +1,30 @@
+<svg id="Group_1" data-name="Group 1" xmlns="http://www.w3.org/2000/svg" viewBox="888 777.5 144 144">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-width: 10px;
+      }
+
+      .cls-1 {
+        stroke: #e74c3c;
+      }
+
+      .cls-2 {
+        stroke: #2ecc71;
+      }
+
+      .cls-3 {
+        stroke: #8e44ad;
+      }
+
+      .cls-4 {
+        stroke: #f1c40f;
+      }
+    </style>
+  </defs>
+  <line id="Line_1" data-name="Line 1" class="cls-1" x2="101" y2="101" transform="translate(909 799.5)"/>
+  <line id="Line_4" data-name="Line 4" class="cls-2" y2="144" transform="translate(960 777.5)"/>
+  <line id="Line_2" data-name="Line 2" class="cls-3" y1="101" x2="101" transform="translate(910 799.5)"/>
+  <line id="Line_3" data-name="Line 3" class="cls-4" x2="144" transform="translate(888 850.5)"/>
+</svg>

@@ -1,0 +1,17 @@
+section.welcome{
+  grid-column: 1 / 13;
+  background-image: url(assets/img/welcome_material.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1{
+    font-size: 36px;
+    color: white;
+  }
+  p{
+    color: white;
+  }
+}
