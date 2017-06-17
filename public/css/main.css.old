@@ -1,7 +1,6 @@
 html, body {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   html .page-wrap-container, body .page-wrap-container {
     display: grid;
@@ -12,20 +11,10 @@ body {
 
 header, nav, .page-wrap-container {
   opacity: 0;
-  -webkit-animation-name: pageInFade;
   animation-name: pageInFade;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 7s;
   animation-delay: 7s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
-
-@-webkit-keyframes pageInFade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 @keyframes pageInFade {
   0% {
@@ -42,38 +31,25 @@ header, nav, .page-wrap-container {
     display: grid;
     grid-template-columns: 1fr 300px 300px 1fr;
     height: 100vh;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden; }
     .loading-overlay .pageContainer .left {
       grid-column: 1 / 3;
       grid-row: 1;
       background-color: #34495E;
-      -webkit-animation-name: slideLeft;
       animation-name: slideLeft;
-      -webkit-animation-duration: 2s;
       animation-duration: 2s;
-      -webkit-animation-delay: 7s;
       animation-delay: 7s;
-      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
     .loading-overlay .pageContainer .middle {
       grid-column: 2 / 4;
       grid-row: 1;
       z-index: 2;
       display: grid;
-      -webkit-align-content: space-around;
-      -ms-flex-line-pack: distribute;
       align-content: space-around;
-      -webkit-animation-name: slideDown;
       animation-name: slideDown;
-      -webkit-animation-duration: 2s;
       animation-duration: 2s;
-      -webkit-animation-delay: 7s;
       animation-delay: 7s;
-      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
       .loading-overlay .pageContainer .middle .titleLogo {
         background-image: url(assets/img/TechBytes_text.svg);
@@ -81,13 +57,9 @@ header, nav, .page-wrap-container {
         background-size: 80%;
         background-repeat: no-repeat;
         height: 85px;
-        -webkit-animation-name: slideUp;
         animation-name: slideUp;
-        -webkit-animation-duration: 2s;
         animation-duration: 2s;
-        -webkit-animation-delay: 3s;
         animation-delay: 3s;
-        -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
       .loading-overlay .pageContainer .middle .logo {
         background-image: url(assets/img/Fox_Logo.png);
@@ -102,13 +74,9 @@ header, nav, .page-wrap-container {
         background-size: contain;
         background-repeat: no-repeat;
         height: 144px;
-        -webkit-animation-name: rotate;
         animation-name: rotate;
-        -webkit-animation-duration: 2500ms;
         animation-duration: 2500ms;
-        -webkit-animation-iteration-count: 5;
         animation-iteration-count: 5;
-        -webkit-animation-timing-function: linear;
         animation-timing-function: linear; }
       .loading-overlay .pageContainer .middle p {
         color: white;
@@ -118,126 +86,53 @@ header, nav, .page-wrap-container {
       grid-column: 3 / 5;
       grid-row: 1;
       background-color: #3498DB;
-      -webkit-animation-name: slideRight;
       animation-name: slideRight;
-      -webkit-animation-duration: 2s;
       animation-duration: 2s;
-      -webkit-animation-delay: 7s;
       animation-delay: 7s;
-      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    left: 0; }
-  25% {
-    left: 125px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-  50% {
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  75% {
-    left: -125px;
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg); }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    left: 0; } }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     left: 0; }
   25% {
     left: 125px;
-    -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
   50% {
     left: 0;
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   75% {
     left: -125px;
-    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg); }
   100% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     left: 0; } }
 
-@-webkit-keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  100% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); } }
-
 @keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0); }
   100% {
-    -webkit-transform: translateX(-100%);
     transform: translateX(-100%); } }
-
-@-webkit-keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  100% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%); } }
 
 @keyframes slideRight {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0); }
   100% {
-    -webkit-transform: translateX(100%);
     transform: translateX(100%); } }
-
-@-webkit-keyframes slideDown {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; }
-  100% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    opacity: 0; } }
 
 @keyframes slideDown {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; }
   100% {
-    -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0; } }
 
 header {
   height: 100px;
   background-color: #34495E;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1px solid black; }
   header .nav-logo {
@@ -248,23 +143,10 @@ header {
     height: 100px;
     width: 100px; }
   header .desktop-nav {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
     header .desktop-nav ul {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
       flex-direction: row;
       list-style: none;
       color: white;
@@ -280,20 +162,13 @@ header {
     width: 60px;
     height: 50px;
     position: absolute;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     right: 0;
     margin-top: 6px;
     margin-right: 10px;
     cursor: pointer; }
     header .hamburger span {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
       position: absolute;
       width: 100%;
@@ -302,11 +177,7 @@ header {
       background-color: white;
       border-radius: 10px;
       opacity: 1;
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
       transform: rotate(0deg);
-      -webkit-transition: all .25s ease-in-out;
-      -o-transition: all .25s ease-in-out;
       transition: all .25s ease-in-out; }
     header .hamburger span:nth-child(1) {
       top: 0; }
@@ -316,8 +187,6 @@ header {
       top: 30px; }
   header .hamburger.open span:nth-child(1) {
     top: 15px;
-    -webkit-transform: rotate(138deg);
-    -ms-transform: rotate(138deg);
     transform: rotate(138deg);
     background-color: red; }
   header .hamburger.open span:nth-child(2) {
@@ -326,8 +195,6 @@ header {
     background-color: red; }
   header .hamburger.open span:nth-child(3) {
     top: 15px;
-    -webkit-transform: rotate(-138deg);
-    -ms-transform: rotate(-138deg);
     transform: rotate(-138deg);
     background-color: red; }
 
@@ -336,14 +203,7 @@ nav .mobile-nav {
   nav .mobile-nav ul {
     padding: 0;
     margin: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     list-style: none; }
     nav .mobile-nav ul li {
@@ -364,28 +224,15 @@ nav .mobile-nav {
 @media screen and (max-width: 520px) {
   header {
     height: 53px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row; }
     header .nav-logo {
       height: 53px;
       width: 53px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex; }
     header .desktop-nav {
       display: none; }
     header .hamburger {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex; } }
 
 section.welcome {
@@ -398,23 +245,16 @@ section.welcome {
   text-align: center; }
   section.welcome h1 {
     font-size: 36px;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Russo One', sans-serif; }
+    color: white; }
   section.welcome p {
-    color: white;
-    font-family: 'Hind Siliguri', sans-serif; }
+    color: white; }
 
 section.about {
-  grid-column: 1 /13;
-  text-align: center;
-  background-color: #ECF0F1; }
+  grid-column: 2 /12;
+  text-align: center; }
   section.about h2 {
     text-transform: uppercase;
-    font-size: 32px;
-    font-family: 'Russo One', sans-serif; }
-  section.about p {
-    font-family: 'Hind Siliguri', sans-serif; }
+    font-size: 32px; }
   section.about .photo-container {
     height: 200px;
     width: 100%; }
@@ -425,19 +265,9 @@ section.about {
       background-repeat: no-repeat;
       height: inherit; }
   section.about .icon-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 50px 0; }
     section.about .icon-container .icon {
@@ -519,19 +349,11 @@ section.skills {
   background-color: #3498DB;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-row-gap: 10px;
-  background-image: url(assets/img/welcome_material_blue.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  grid-row-gap: 10px; }
   section.skills h2 {
     grid-column: 1 / 8;
-    text-transform: uppercase;
     font-size: 32px;
-    font-family: 'Russo One', sans-serif; }
-  section.skills p {
-    font-family: 'Hind Siliguri', sans-serif; }
+    text-transform: uppercase; }
   section.skills .programming-container {
     grid-column: 3 / 6;
     background-color: white;
@@ -540,10 +362,6 @@ section.skills {
       list-style: none;
       padding: 0;
       margin: 0 0 10px 0; }
-    section.skills .programming-container h4 {
-      font-family: 'Hind Siliguri', sans-serif; }
-    section.skills .programming-container ul li {
-      font-family: 'Hind Siliguri', sans-serif; }
   section.skills .desktop-support-container {
     grid-column: 3 / 6;
     background-color: white;
@@ -553,10 +371,6 @@ section.skills {
       list-style: none;
       margin: 0 0 10px 0;
       padding: 0; }
-    section.skills .desktop-support-container h4 {
-      font-family: 'Hind Siliguri', sans-serif; }
-    section.skills .desktop-support-container ul li {
-      font-family: 'Hind Siliguri', sans-serif; }
 
 @media screen and (max-width: 1100px) {
   section.skills .programming-container {
@@ -576,18 +390,12 @@ section.portfolio {
   background-color: #ECF0F1; }
   section.portfolio h2 {
     text-transform: uppercase;
-    font-size: 32px;
-    font-family: 'Russo One', sans-serif; }
-  section.portfolio p {
-    font-family: 'Hind Siliguri', sans-serif; }
+    font-size: 32px; }
   section.portfolio .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 320px);
     grid-template-rows: 1fr, 1fr;
     grid-gap: 30px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 50px; }
     section.portfolio .portfolio-container .mod {
@@ -611,15 +419,10 @@ section.contact {
   grid-column: 1 / 13;
   text-align: center; }
   section.contact h2 {
-    text-transform: uppercase;
-    font-size: 32px;
-    font-family: 'Russo One', sans-serif; }
+    font-size: 32px; }
   section.contact form {
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 50px; }
     section.contact form .first {
@@ -658,15 +461,11 @@ section.contact {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: 1fr 1fr;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     grid-column-gap: 100px; }
     section.contact .icon-container p {
       font-size: 26px;
-      color: #95989A;
-      font-family: 'Hind Siliguri', sans-serif; }
+      color: #95989A; }
     section.contact .icon-container .github {
       background-image: url(assets/img/github.png);
       background-position: center;
@@ -692,8 +491,6 @@ section.contact {
     section.contact .icon-container .linkedInText,
     section.contact .icon-container .twitterText {
       opacity: 0;
-      -webkit-transition: opacity .5s ease-in-out;
-      -o-transition: opacity .5s ease-in-out;
       transition: opacity .5s ease-in-out; }
     section.contact .icon-container .github:hover ~ .githubText,
     section.contact .icon-container .linkedIn:hover ~ .linkedInText,

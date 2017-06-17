@@ -1,46 +1,44 @@
-section.about{
-  grid-column: 1 /13;
-  text-align: center;
-  background-color: #ECF0F1;
-  h2{
+section.about {
+  grid-column: 2 /12;
+  text-align: center; }
+  section.about h2 {
     text-transform: uppercase;
     font-size: 32px;
-    font-family: 'Russo One', sans-serif;
-  }
-  p{
-    font-family: 'Hind Siliguri', sans-serif;
-  }
-  .photo-container{
+    font-family: 'Russo One', sans-serif; }
+  section.about .photo-container {
     height: 200px;
-    width: 100%;
-
-
-    .about-photo{
+    width: 100%; }
+    section.about .photo-container .about-photo {
       background-image: url(assets/img/about-me.jpg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      height: inherit;
-
-    }
-  }
-  .icon-container{
+      height: inherit; }
+  section.about .icon-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 50px 0;
-
-    .icon{
+    margin: 50px 0; }
+    section.about .icon-container .icon {
       height: 95px;
       width: 95px;
       background-color: white;
       border-radius: 50%;
       color: white;
       position: relative;
-      cursor: pointer;
-
-      .icon1{
+      cursor: pointer; }
+      section.about .icon-container .icon .icon1 {
         background-image: url(assets/img/computer.svg);
         background-size: contain;
         background-position: center;
@@ -49,9 +47,8 @@ section.about{
         height: 50%;
         width: 50%;
         left: 25%;
-        top: 25%;
-      }
-      .icon2{
+        top: 25%; }
+      section.about .icon-container .icon .icon2 {
         background-image: url(assets/img/bike.svg);
         background-size: contain;
         background-position: center;
@@ -60,9 +57,8 @@ section.about{
         height: 50%;
         width: 50%;
         left: 25%;
-        top: 25%;
-      }
-      .icon3{
+        top: 25%; }
+      section.about .icon-container .icon .icon3 {
         background-image: url(assets/img/book.svg);
         background-size: contain;
         background-position: center;
@@ -71,9 +67,8 @@ section.about{
         height: 50%;
         width: 50%;
         left: 25%;
-        top: 25%;
-      }
-      .icon4{
+        top: 25%; }
+      section.about .icon-container .icon .icon4 {
         background-image: url(assets/img/coffee.svg);
         background-size: contain;
         background-position: center;
@@ -82,9 +77,8 @@ section.about{
         height: 50%;
         width: 50%;
         left: 25%;
-        top: 25%;
-      }
-      .icon5{
+        top: 25%; }
+      section.about .icon-container .icon .icon5 {
         background-image: url(assets/img/hiking.svg);
         background-size: contain;
         background-position: center;
@@ -93,29 +87,18 @@ section.about{
         height: 50%;
         width: 50%;
         left: 25%;
-        top: 25%;
-      }
-    }
-    .iconRed:hover{
-      background-color: #E74C3C;
-    }
-    .iconOrange:hover{
-      background-color: #F39C12;
-    }
-    .iconPurple:hover{
-      background-color: #9B59B6;
-    }
-    .iconBlue:hover{
-      background-color: #3498DB;
-    }
-    .iconGreen:hover{
-      background-color: #2ECC71;
-    }
-  }
-}
+        top: 25%; }
+    section.about .icon-container .iconRed:hover {
+      background-color: #E74C3C; }
+    section.about .icon-container .iconOrange:hover {
+      background-color: #F39C12; }
+    section.about .icon-container .iconPurple:hover {
+      background-color: #9B59B6; }
+    section.about .icon-container .iconBlue:hover {
+      background-color: #3498DB; }
+    section.about .icon-container .iconGreen:hover {
+      background-color: #2ECC71; }
 
-@media screen and (max-width: 600px){
-  section.about{
-    grid-column: 1 / 13;
-  }
-}
+@media screen and (max-width: 600px) {
+  section.about {
+    grid-column: 1 / 13; } }

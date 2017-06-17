@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechBytes | Home</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Economica|Russo+One|Hind+Siliguri|">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="loading-overlay">
+    <div class="pageContainer">
+      <div class="left"></div>
+      <div class="middle">
+        <div class="titleLogo"></div>
+        <div class="logo"></div>
+        <div class="spinWheel"></div>
+        <p>Please wait while we load the page</p>
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+  <header><a class="nav-logo" href="home.html"></a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+    <div class="desktop-nav">
+      <ul>
+        <li>Welcome</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </header>
+  <nav>
+    <div class="mobile-nav">
+      <ul>
+        <li>Welcome</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </nav>
+  <div class="page-wrap-container"> 
+    <section class="welcome">
+      <h1>TechBytes</h1>
+      <p>Welcome to TechBytes</p>
+      <p>This site is created to showcase my skills and abilities in order to provide a glimpse into my work.</p>
+      <p>Happy Surfin'!</p>
+    </section>
+    <section class="about">
+      <h2>About</h2>
+      <div class="photo-container">
+        <div class="about-photo"></div>
+      </div>
+      <div class="text-container">
+        <p>This is the section where I talk a little about myself, something I hate doing.</p>
+        <p>I am a computer engineer who works for Memorial Sloan Kettering Cancer Center in New York City. However, I dedicate my free time to working on the back-end, some call it "Behind the Scenes" or "Back Stage." I made that up, lolz. I am, at times, frustrated with the tedious effort of learning to code and the countless hours spent on troubleshooting when I was just missing a comma somewhere. Nevertheless, the satisfaction of witnessing your code at work is what keeps me going. </p>
+        <p>I also enjoy hiking, biking(single speed guru) and the occasional video game(currently playing Star Citizen Alpha).</p>
+      </div>
+      <div class="icon-container">
+        <div class="icon iconRed">
+          <div class="icon1"></div>
+        </div>
+        <div class="icon iconOrange">
+          <div class="icon2"></div>
+        </div>
+        <div class="icon iconPurple">
+          <div class="icon3"></div>
+        </div>
+        <div class="icon iconBlue">
+          <div class="icon4"></div>
+        </div>
+        <div class="icon iconGreen">
+          <div class="icon5"> </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="programming-container">
+        <h4>Programming</h4>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div class="desktop-support-container">
+        <h4>Desktop Support</h4>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-container"><a class="mod mod1" href="/calendar"></a>
+        <div class="mod mod2"></div>
+        <div class="mod mod3"></div>
+        <div class="mod mod4"></div>
+        <div class="mod mod5"></div>
+        <div class="mod mod6"></div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contact</h2><form  method="POST"><p class="first"><input type="text" name="name" placeholder="Name"><br/>
+<p class="email"><input type="text" name="email" placeholder="Email"><br/>
+<p class="message"><textarea rows="6" type="text" name="message" placeholder="Message"></textarea><br/>
+<button input="submit" value="submit" disabled>Submit</button>
+<div class="g-recaptcha" data-sitekey="6LckTSEUAAAAAFnv4Jm1zhHDbUVwjGn11s4QrB0q" data-callback="recaptcha_callback"></div>
+      <script>
+        function recaptcha_callback() {
+        $('button').removeAttr('disabled');
+        };
+      </script></form>
+      <div class="icon-container">
+        <div class="github"></div>
+        <div class="linkedIn"></div>
+        <div class="twitter"></div>
+        <p class="githubText">Github</p>
+        <p class="linkedInText">LinkedIn</p>
+        <p class="twitterText">Twitter</p>
+      </div>
+    </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/scripts.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
