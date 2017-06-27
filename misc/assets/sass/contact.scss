@@ -33,6 +33,10 @@ section.contact{
       border: 1px solid #95989A;
       border-radius: 16px;
       text-align: center;
+      &:focus{
+        outline: none;
+        border: 1px solid #34495E;
+      }
     }
 
     textarea{
@@ -42,6 +46,10 @@ section.contact{
       border: 1px solid #95989A;
       border-radius: 16px;
       text-align: center;
+      &:focus{
+        outline: none;
+        border: 1px solid #34495E;
+      }
     }
 
     button{

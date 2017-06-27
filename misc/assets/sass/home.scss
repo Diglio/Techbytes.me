@@ -5,6 +5,11 @@ header{
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  transition: all .5s ease-in-out;
+  font-family: "Russo One";
 
   .nav-logo{
     background-image: url(assets/img/Fox_logo.png);
@@ -24,16 +29,16 @@ header{
       flex-direction: row;
       list-style: none;
       color: white;
-      margin-right: 15px;
 
       li{
         text-align: center;
-        font-size: 24px;
-        padding: 37px 10px;
+        font-size: 16px;
+        padding: 41px 10px;
       }
 
       li:hover{
         background-color: green;
+        cursor: pointer;
       }
     }
   }
@@ -96,6 +101,11 @@ header{
 nav{
   .mobile-nav{
     display: none;
+    position: fixed;
+    top: 53px;
+    z-index: 2;
+    width: 100%;
+    transition: opacity .5s ease-in-out;
 
     ul{
       padding: 0;
@@ -151,6 +161,11 @@ nav{
 
     .hamburger{
       display: flex;
+    }
+  }
+  body{
+    .page-wrap-container{
+      top: 53px;
     }
   }
 }
