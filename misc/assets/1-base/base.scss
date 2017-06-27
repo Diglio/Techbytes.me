@@ -6,27 +6,33 @@ html, body{
   .page-wrap-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    top: 100px;
   }
 }
 
-body{
-  overflow: hidden;
+// body{
+//   overflow: hidden;
+// }
+
+// header, nav, .page-wrap-container{
+//   opacity: 0;
+//   animation-name: pageInFade;
+//   animation-duration: 2s;
+//   animation-delay: 7s;
+//   animation-fill-mode: forwards;
+// }
+
+.active{
+  background-color: blue;
 }
 
-header, nav, .page-wrap-container{
-  opacity: 0;
-  animation-name: pageInFade;
-  animation-duration: 2s;
-  animation-delay: 7s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes pageInFade{
-  0%{
-    opacity: 0;
-  }
-
-  100%{
-    opacity: 1;
-  }
-}
+// @keyframes pageInFade{
+//   0%{
+//     opacity: 0;
+//   }
+//
+//   100%{
+//     opacity: 1;
+//   }
+// }
