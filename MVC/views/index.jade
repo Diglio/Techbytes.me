@@ -1,6 +1,6 @@
 mixin nav-content()
   ul
-    li Welcome
+    li.active Welcome
     li About
     li Skills
     li Portfolio
@@ -10,25 +10,25 @@ doctype html
 
 head
   meta(charset="utf-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1")
+  meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
   title TechBytes | Home
   link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Economica|Russo+One|Hind+Siliguri|")
   link(rel="stylesheet", href="main.css")
   
 body
 
-  .loading-overlay
-    .pageContainer
-      .left
-      .middle
-        .titleLogo
-        .logo
-        .spinWheel
-        p Please wait while we load the page
-      .right
+  //- .loading-overlay
+  //-   .pageContainer
+  //-     .left
+  //-     .middle
+  //-       .titleLogo
+  //-       .logo
+  //-       .spinWheel
+  //-       p Please wait while we load the page
+  //-     .right
   
   header
-    a(href="home.html").nav-logo
+    a(href="#").nav-logo
     .hamburger
       span
       span
@@ -67,6 +67,61 @@ body
           .icon4
         .icon.iconGreen
           .icon5 
+          
+    section.setup
+      .icon-container
+        .icon
+        .icon
+        .icon
+        .icon
+        .icon
+      h2 Setup
+      p picture 1
+      p picture 2
+      
+    section.bikingGear
+      .icon-container
+        .icon
+        .icon
+        .icon
+        .icon
+        .icon
+      h2 Biking
+      p Picture 1
+      p Picture 2
+    
+    section.readingList
+      .icon-container
+        .icon
+        .icon
+        .icon
+        .icon
+        .icon
+      h2 Reading
+      p Picture 1
+      p Picture 2
+        
+    section.coffeeFreak
+      .icon-container
+        .icon
+        .icon
+        .icon
+        .icon
+        .icon
+      h2 Coffee
+      p Picture 1
+      p Picture 2
+          
+    section.hiking
+      .icon-container
+        .icon
+        .icon
+        .icon
+        .icon
+        .icon
+      h2 Hiking
+      p Picture 1
+      p Picture 2            
   
     section.skills
       h2 Skills
@@ -118,8 +173,12 @@ body
         p.githubText Github
         p.linkedInText LinkedIn
         p.twitterText Twitter
+        
+    section.footer
+      p @2017 Techbytes.Me All Rights Reserverd
       
   
   script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
   script(src="/scripts.js")
+  script(src="assets/js/scripts.js")
   script(src='https://www.google.com/recaptcha/api.js')
