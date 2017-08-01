@@ -3,7 +3,9 @@ section.contact{
   text-align: center;
 
   h2{
+    text-transform: uppercase;
     font-size: 32px;
+    font-family: 'Russo One', sans-serif;
   }
 
   form{
@@ -31,6 +33,10 @@ section.contact{
       border: 1px solid #95989A;
       border-radius: 16px;
       text-align: center;
+      &:focus{
+        outline: none;
+        border: 1px solid #34495E;
+      }
     }
 
     textarea{
@@ -40,6 +46,10 @@ section.contact{
       border: 1px solid #95989A;
       border-radius: 16px;
       text-align: center;
+      &:focus{
+        outline: none;
+        border: 1px solid #34495E;
+      }
     }
 
     button{
@@ -69,6 +79,7 @@ section.contact{
     p{
       font-size: 26px;
       color: #95989A;
+      font-family: 'Hind Siliguri', sans-serif;
     }
 
     .github{

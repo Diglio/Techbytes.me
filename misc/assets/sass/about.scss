@@ -1,24 +1,39 @@
 section.about{
-  grid-column: 2 /12;
+  grid-column: 1 /13;
   text-align: center;
-
+  background-color: #ECF0F1;
   h2{
     text-transform: uppercase;
     font-size: 32px;
+    font-family: 'Russo One', sans-serif;
   }
-
+  p{
+    font-family: 'Hind Siliguri', sans-serif;
+  }
   .photo-container{
     height: 200px;
     width: 100%;
 
+
     .about-photo{
-      background-image: url(assets/img/about-me.jpg);
+      background-image: url(assets/img/about-me.svg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       height: inherit;
+
     }
   }
+
+  .text-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    p{
+      grid-column: 3 / 11;
+    }
+  }
+
   .icon-container{
     display: flex;
     justify-content: space-around;

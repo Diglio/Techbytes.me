@@ -1,15 +1,24 @@
 section.skills{
   grid-column: 1 / 13;
   text-align: center;
-  background-color: #3498DB;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-row-gap: 10px;
+  background-image: url(assets/img/skills-background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   h2{
     grid-column: 1 / 8;
-    font-size: 32px;
     text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+  }
+  p{
+    font-family: 'Hind Siliguri', sans-serif;
   }
 
   .programming-container{
@@ -21,6 +30,13 @@ section.skills{
       list-style: none;
       padding: 0;
       margin: 0 0 10px 0;
+
+    }
+    h4{
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+    ul li{
+      font-family: 'Hind Siliguri', sans-serif;
     }
   }
 
@@ -34,6 +50,12 @@ section.skills{
       list-style: none;
       margin: 0 0 10px 0;
       padding: 0;
+    }
+    h4{
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+    ul li{
+      font-family: 'Hind Siliguri', sans-serif;
     }
   }
 }
