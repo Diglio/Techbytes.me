@@ -11,6 +11,23 @@ html, body{
   }
 }
 
+header{
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+nav{
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+// .active{
+//   background-color: blue;
+// }
 // body{
 //   overflow: hidden;
 // }
@@ -22,10 +39,6 @@ html, body{
 //   animation-delay: 7s;
 //   animation-fill-mode: forwards;
 // }
-
-.active{
-  background-color: blue;
-}
 
 // @keyframes pageInFade{
 //   0%{
