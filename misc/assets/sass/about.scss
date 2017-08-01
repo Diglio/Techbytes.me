@@ -16,7 +16,7 @@ section.about{
 
 
     .about-photo{
-      background-image: url(assets/img/about-me.jpg);
+      background-image: url(assets/img/about-me.svg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -24,6 +24,16 @@ section.about{
 
     }
   }
+
+  .text-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    p{
+      grid-column: 3 / 11;
+    }
+  }
+
   .icon-container{
     display: flex;
     justify-content: space-around;
