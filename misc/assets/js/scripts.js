@@ -122,42 +122,50 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $('.welcome').offset().top - 100
     }, 1000);
-    $('.hamburger').toggleClass('open');
-    $('.mobile-nav').slideToggle();
-
+    if($('.mobile-nav').css('display') === ('block')){
+      $('.mobile-nav').slideToggle();
+      $('.hamburger').toggleClass('open');
+    }
   });
+
   $('li a[href="#about"]').click(function(event){
     event.preventDefault();
     $('html, body').animate({
       scrollTop: $('.about').offset().top - 100
     }, 1000);
-    $('.hamburger').toggleClass('open');
-    $('.mobile-nav').slideToggle();
+    if($('.mobile-nav').css('display') === ('block')){
+      $('.mobile-nav').slideToggle();
+      $('.hamburger').toggleClass('open');
+    }
   });
   $('li a[href="#skills"]').click(function(event){
     event.preventDefault();
     $('html, body').animate({
       scrollTop: $('.skills').offset().top - 100
     }, 1000);
-    $('.hamburger').toggleClass('open');
-    $('.mobile-nav').slideToggle();
+    if($('.mobile-nav').css('display') === ('block')){
+      $('.mobile-nav').slideToggle();
+      $('.hamburger').toggleClass('open');
+    }
   });
   $('li a[href="#portfolio"]').click(function(event){
     event.preventDefault();
     $('html, body').animate({
       scrollTop: $('.portfolio').offset().top - 100
     }, 1000);
-    $('.hamburger').toggleClass('open');
-    $('.mobile-nav').slideToggle();
+    if($('.mobile-nav').css('display') === ('block')){
+      $('.mobile-nav').slideToggle();
+      $('.hamburger').toggleClass('open');
+    }
   });
   $('li a[href="#contact"]').click(function(event){
     event.preventDefault();
     $('html, body').animate({
       scrollTop: $('.contact').offset().top - 100
     }, 1000);
-    $('.hamburger').toggleClass('open');
-    $('.mobile-nav').slideToggle();
+    if($('.mobile-nav').css('display') === ('block')){
+      $('.mobile-nav').slideToggle();
+      $('.hamburger').toggleClass('open');
+    }
   });
-
-
 });
